@@ -8,7 +8,7 @@ app.service('NoticiasService', function() {
             titulo: 'Prazo de Rematrícula 2027.1',
             data: '10/11/2026',
             categoria: 'Notícia',
-            imagem: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800',
+            imagem: 'https://images.unsplash.com/photo-1562774053-701939374585?w=800',
             resumo: 'Confira as orientações para realizar sua rematrícula.',
             conteudo: 'A Universidade Católica do Salvador informa que o período de rematrícula para o semestre 2027.1 estará disponível no portal acadêmico. Os estudantes devem verificar suas pendências e realizar o procedimento dentro do prazo estabelecido.'
         },

@@ -102,6 +102,13 @@ body {
     font-size: 12px;
 }
 
+.login-container .item-input .icon {
+    color: #174D7A;
+    font-size: 20px;
+    min-width: 28px;
+    margin-right: 8px;
+}
+
 
 /*cabeçalho*/
 
@@ -146,6 +153,24 @@ body {
 .menu .item i {
     margin-right: 10px;
     color: var(--azul-principal);
+}
+
+/* Barra superior */
+.bar-positive {
+    background-color: #102C50 !important;
+    border-color: #102C50 !important;
+}
+
+/* Botão voltar */
+.bar-positive .back-button,
+.bar-positive .back-button .icon,
+.bar-positive .back-button span {
+    color: #FFFFFF !important;
+}
+
+/* Texto e ícone do botão */
+.bar-positive .back-button {
+    font-size: 15px;
 }
 
 
@@ -263,6 +288,24 @@ body {
     color: #996300;
 }
 
+/* Ícones da barra de navegação */
+.bar-ucsal .button,
+.bar-ucsal .button-icon,
+.bar-ucsal .back-button,
+.bar-ucsal .back-button .icon {
+    color: #FFFFFF !important;
+}
+
+/* Ícone do menu lateral */
+.bar-ucsal .ion-navicon {
+    color: #FFFFFF !important;
+    font-size: 28px;
+}
+
+/* Texto do botão voltar */
+.bar-ucsal .back-button span {
+    color: #FFFFFF !important;
+}
 
 /* responsividade */
 
