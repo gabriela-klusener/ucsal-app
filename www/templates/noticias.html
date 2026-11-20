@@ -1,0 +1,78 @@
+
+<ion-view view-title="Notícias e Eventos">
+
+    <ion-content class="content-background">
+
+        <div class="page-heading">
+
+            <h2>Olá, {{alunoLogado.nome.split(' ')[0]}}!</h2>
+
+            <p>Confira as novidades da UCSal.</p>
+
+        </div>
+
+        <div class="filter-area">
+
+            <label class="item item-input item-select">
+
+                <div class="input-label">
+                    Categoria
+                </div>
+
+                <select ng-model="categoriaSelecionada">
+
+                    <option value="Todas">Todas</option>
+                    <option value="Notícia">Notícias</option>
+                    <option value="Evento">Eventos</option>
+
+                </select>
+
+            </label>
+
+        </div>
+
+        <div class="news-list">
+
+            <div
+                class="card news-card"
+                ng-repeat="noticia in noticias | filter:(categoriaSelecionada === 'Todas' ? {} : {categoria: categoriaSelecionada})">
+
+                <img
+                    ng-src="{{noticia.imagem}}"
+                    class="news-image">
+
+                <div class="item item-text-wrap">
+
+                    <span
+                        class="category-badge"
+                        ng-class="noticia.categoria === 'Evento' ? 'badge-evento' : 'badge-noticia'">
+
+                        {{noticia.categoria}}
+
+                    </span>
+
+                    <p class="news-date">
+                        {{noticia.data}}
+                    </p>
+
+                    <h2>{{noticia.titulo}}</h2>
+
+                    <p>{{noticia.resumo}}</p>
+
+                    <button
+                        class="button button-small button-ucsal"
+                        ui-sref="app.detalhe({id: noticia.id})">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+
+</ion-view>

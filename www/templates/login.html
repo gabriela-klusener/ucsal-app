@@ -1,0 +1,57 @@
+
+<ion-view view-title="Portal do Aluno">
+
+    <ion-content class="login-page">
+
+        <div class="login-container">
+
+            <div class="logo-area">
+                <h1>UCSal</h1>
+                <p>Universidade Católica do Salvador</p>
+                <span>PORTAL DO ALUNO</span>
+            </div>
+
+            <div class="login-card">
+
+                <h2>Bem-vindo!</h2>
+                <p>Acesse sua conta acadêmica</p>
+
+                <div class="list">
+
+                    <label class="item item-input">
+                        <i class="icon ion-person"></i>
+                        <input
+                            type="text"
+                            placeholder="Matrícula"
+                            ng-model="usuario.matricula">
+                    </label>
+
+                    <label class="item item-input">
+                        <i class="icon ion-lock-closed"></i>
+                        <input
+                            type="password"
+                            placeholder="Senha"
+                            ng-model="usuario.senha">
+                    </label>
+
+                </div>
+
+                <button
+                    class="button button-block button-ucsal"
+                    ng-click="entrar()">
+
+                    Entrar
+
+                </button>
+
+                <p class="login-help">
+                    Acesso exclusivo para estudantes
+                </p>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+
+</ion-view>

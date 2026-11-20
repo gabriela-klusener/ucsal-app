@@ -1,0 +1,40 @@
+
+<ion-view view-title="Detalhes da publicação">
+
+    <ion-content class="content-background">
+
+        <div ng-if="noticiaAtual" class="card detail-card">
+
+            <img
+                ng-src="{{noticiaAtual.imagem}}"
+                class="detail-image">
+
+            <div class="item item-text-wrap">
+
+                <span class="category-badge badge-noticia">
+                    {{noticiaAtual.categoria}}
+                </span>
+
+                <p class="news-date">
+                    {{noticiaAtual.data}}
+                </p>
+
+                <h2>{{noticiaAtual.titulo}}</h2>
+
+                <p class="detail-content">
+                    {{noticiaAtual.conteudo}}
+                </p>
+
+            </div>
+
+        </div>
+
+        <div ng-if="!noticiaAtual" class="card">
+            <div class="item item-text-wrap">
+                Publicação não encontrada.
+            </div>
+        </div>
+
+    </ion-content>
+
+</ion-view>

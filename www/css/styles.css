@@ -1,0 +1,295 @@
+
+/* cores ucsal*/
+
+:root {
+    --azul-marinho: #102C50;
+    --azul-principal: #174D7A;
+    --azul-claro: #E8F1FA;
+    --branco: #FFFFFF;
+    --cinza-fundo: #F4F6F9;
+    --cinza-texto: #64748B;
+}
+
+
+/* estilo geral */
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cinza-fundo);
+}
+
+.content-background {
+    background: var(--cinza-fundo);
+}
+
+.bar-ucsal {
+    background: var(--azul-marinho);
+    color: var(--branco);
+}
+
+.bar-ucsal .title {
+    color: var(--branco);
+}
+
+.button-ucsal {
+    background: var(--azul-marinho);
+    color: var(--branco);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button-ucsal:hover {
+    background: var(--azul-principal);
+    color: var(--branco);
+}
+
+
+/* login */
+
+.login-page {
+    background: linear-gradient(
+        135deg,
+        #102C50,
+        #287DB3
+    );
+}
+
+.login-container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.logo-area {
+    text-align: center;
+    color: white;
+    margin: 35px 0;
+}
+
+.logo-area h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo-area p {
+    font-size: 14px;
+}
+
+.logo-area span {
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.login-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.login-card h2 {
+    color: var(--azul-marinho);
+    text-align: center;
+}
+
+.login-card > p {
+    text-align: center;
+    color: var(--cinza-texto);
+}
+
+.login-help {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+/*cabeçalho*/
+
+.page-heading {
+    padding: 20px 16px 10px;
+}
+
+.page-heading h2 {
+    color: var(--azul-marinho);
+    font-weight: bold;
+}
+
+.page-heading p {
+    color: var(--cinza-texto);
+}
+
+
+/* menu lateral*/
+
+.menu-profile {
+    background: var(--azul-claro);
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.menu-profile i {
+    font-size: 45px;
+    color: var(--azul-marinho);
+}
+
+.menu-profile h3 {
+    color: var(--azul-marinho);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu-profile p {
+    color: var(--cinza-texto);
+    font-size: 12px;
+}
+
+.menu .item i {
+    margin-right: 10px;
+    color: var(--azul-principal);
+}
+
+
+/* noticias */
+
+.news-list {
+    padding: 0 10px;
+}
+
+.news-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.news-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-date {
+    color: var(--cinza-texto);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.badge-noticia {
+    background: #DCEBFA;
+    color: #174D7A;
+}
+
+.badge-evento {
+    background: #E4F5EB;
+    color: #237347;
+}
+
+
+/* detalhes da notícia */
+
+.detail-card {
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.detail-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.detail-content {
+    margin-top: 20px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+
+/* perfil*/
+
+.profile-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.item-divider {
+    color: var(--azul-marinho);
+    font-weight: bold;
+}
+
+.profile-card input:disabled {
+    background: #F1F3F5;
+    color: #64748B;
+}
+
+
+/* financeiro */
+
+.finance-card {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.finance-value {
+    color: var(--azul-marinho);
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.status-paga {
+    background: #D9F4E3;
+    color: #16743A;
+}
+
+.status-pendente {
+    background: #FFF0C2;
+    color: #996300;
+}
+
+
+/* responsividade */
+
+.card {
+    border-radius: 10px;
+}
+
+button {
+    transition: 0.2s;
+}
+
+@media (min-width: 768px) {
+
+    .news-list {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .profile-card,
+    .finance-card {
+        max-width: 800px;
+        margin: 15px auto;
+    }
+
+    .page-heading {
+        max-width: 800px;
+        margin: auto;
+    }
+
+}
